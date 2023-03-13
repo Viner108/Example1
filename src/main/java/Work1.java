@@ -8,6 +8,7 @@ public class Work1 {
         int counter2 = 0;
         int counter3 = 0;
         long size = 0;
+        long size7 = 0;
         int k = 0;
         byte[] bytes = null;
         try {
@@ -16,6 +17,9 @@ public class Work1 {
             e.printStackTrace();
         }
         System.out.println(sum(bytes));
+    }
+    public static void delete(){
+//sa;ldkjfa;lskdjf jk;asdflkj;lkj
     }
     public static int sum( byte[] bytes) {
         int j = 0;
