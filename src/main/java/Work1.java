@@ -17,7 +17,7 @@ public class Work1 {
         System.out.println(sum(bytes));
     }
     public static void delete(){
-
+//sa;ldkjfa;lskdjf jk;asdflkj;lkj
     }
     public static int sum( byte[] bytes) {
         int j = 0;
