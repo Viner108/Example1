@@ -5,6 +5,7 @@ import java.nio.file.Path;
 public class Work1 {
     public static void main(String[] args) {
         int j = 0;
+        int k = 0;
         byte[] bytes = null;
         try {
             bytes = Files.readAllBytes(Path.of("D:/TEMP/fileName.txt"));
