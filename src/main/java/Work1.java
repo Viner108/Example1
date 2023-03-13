@@ -6,6 +6,7 @@ public class Work1 {
     public static void main(String[] args) {
         int counter = 0;
         long size = 0;
+        long size7 = 0;
         int k = 0;
         byte[] bytes = null;
         try {
