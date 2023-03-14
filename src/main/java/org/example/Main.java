@@ -8,7 +8,7 @@ public class Main {
     }
     public static int txt1(int[] txt){
         int j = 0;
-        for (int i = 0; i < txt.length; i++) {
+        for (int i = 0; i < txt.length && txt[i] != 13; i++) {
             j++;
         }
         return j;
@@ -18,7 +18,7 @@ public class Main {
         int b2;
         for (int i = 0; i < txt.length; i++) {
             if(txt[i]!=13){
-                b1 += txt[i]*Math.pow(10,txt1(txt)-2-i);
+                b1 += txt[i]*Math.pow(10,txt1(txt)-1-i);
             }
 
         }

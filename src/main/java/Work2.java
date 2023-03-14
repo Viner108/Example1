@@ -11,9 +11,10 @@ public class Work2 {
             e.printStackTrace();
         }
         System.out.println(sum(bytes));
+        System.out.println(txt1(bytes));
     }
     public static int sum( byte[] bytes) {
-        int j = 0;
+        int k = 0;
         int i;
         byte b1;
         byte b2;
@@ -21,87 +22,42 @@ public class Work2 {
             b1 = bytes[i];
             b2 = bytes[i + 1];
             if (b1 == 13 || b1 == 10) {
+            }
+            else if (b1 == 48&& b2 ==13) {
+                b1 = 0;
+                System.out.println(b1);
 
-            } else if (b1 == 48&& b2 ==13) {
+            }else if (b1 == 49&& b2 ==13) {
+                b1 = 1;
+                System.out.println(b1);
+            } else if (b1 == 50&& b2 ==13) {
+                b1 = 2;
+                System.out.println(b1);
 
-                System.out.println(0);
+            } else if (b1 == 51&& b2 ==13) {
+                b1 = 3;
+                System.out.println(b1);
+
+            } else if (b1 == 52&& b2 ==13) {
+                b1 = 4;
+                System.out.println(b1);
+
+            } else if ( b1 !=13) {
+                b1 += bytes[i]*Math.pow(10,txt1(bytes)-1-i);
+                System.out.println(b1);
+
+            } else {
+                System.out.println(bytes[i]);
             }
-            else if (b1 == 49&& b2 ==13) {
-                System.out.println(1);
-            }
-            else if (b1 == 50&& b2 ==13) {
-                System.out.println(2);
-            }
-            else if (b1 == 51&& b2 ==13) {
-                System.out.println(3);
-            }
-            else if (b1 == 52&& b2 ==13) {
-                System.out.println(4);
-            }
-            else if (b1 == 53&& b2 ==13) {
-                System.out.println(5);
-            }
-            else if (b1 == 54&& b2 ==13) {
-                System.out.println(6);
-            }
-            else if (b1 == 55&& b2 ==13) {
-                System.out.println(7);
-            }
-            else if (b1 == 56&& b2 ==13) {
-                System.out.println(8);
-            }
-            else if (b1 == 57&& b2 ==13) {
-                System.out.println(9);;
-            }
-            else if (b1 == 48&& b2 !=13) {
-                System.out.print(0);
-            }
-            else if (b1 == 49&& b2 !=13) {
-                System.out.print(1);
-            }
-            else if (b1 == 50&& b2 !=13) {
-                System.out.print(2);
-            }
-            else if (b1 == 51&& b2 !=13) {
-                System.out.print(3);
-            }
-            else if (b1 == 52&& b2 !=13) {
-                System.out.print(4);
-            }
-            else if (b1 == 53&& b2 !=13) {
-                System.out.print(5);
-            }
-            else if (b1 == 54&& b2 !=13) {
-                System.out.print(6);
-            }
-            else if (b1 == 55&& b2 !=13) {
-                System.out.print(7);
-            }
-            else if (b1 == 56&& b2 !=13) {
-                System.out.print(8);
-            }
-            else if (b1 == 57&& b2 !=13) {
-                System.out.print(9);;
-            }
-            else {
-                System.out.print(bytes[i]);
-            }
+
+        }return k;
+    }
+   public static int txt1(byte[] bytes){
+        int j = 0;
+        for (int i = 0; i < bytes.length && bytes [i] != 13; i++) {
+            j++;
         }
         return j;
     }
-//    public static void txt(byte[] bytes){
-//        int j;
-//        int x;
-//        byte b2 = bytes [j+1];
-//        for (int j = 0; j < bytes.length; j++) {
-//
-//        } {
-//            if(b2!=13){
-//
-//
-//            }
-//        }
-//
-//    }
 
 }
