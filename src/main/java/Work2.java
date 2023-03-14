@@ -43,7 +43,7 @@ public class Work2 {
                 System.out.println(b1);
 
             } else if ( b1 !=13) {
-                b1 += bytes[i]*Math.pow(10,txt1(bytes)-1-i);
+                b1 += bytes[i]*Math.pow(10,txt1(bytes)-i);
                 System.out.println(b1);
 
             } else {
